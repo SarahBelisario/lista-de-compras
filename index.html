@@ -26,9 +26,16 @@
       <a href="#" class="btn-back">← Voltar</a>
       <h1>Compras da semana</h1>
 
-      <form action="">
-        <input type="text" placeholder="Adicione um novo item" />
-        <button type="submit">Adicionar item</button>
+      <form class="add-item-form">
+        <input
+          type="text"
+          class="item-input"
+          placeholder="Adicione um novo item"
+          required
+        />
+        <button type="submit" class="add-btn">
+          <span>Adicionar item</span>
+        </button>
       </form>
 
       <section class="lista-container">

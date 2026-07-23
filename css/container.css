@@ -1,14 +1,14 @@
 .container {
   width: 100%;
-  max-width: 440px;
+  max-width: 620px; 
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.btn-back{
+.btn-back {
   display: inline-block;
   font-size: var(--font-link, 0.875rem);
-  color: var(--color-brand, #CA3884);
+  color: var(--color-brand);
   text-decoration: none;
   font-weight: 500;
   margin-bottom: 0.5rem;
