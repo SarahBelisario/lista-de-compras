@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="shortcut icon" href="/imgs/icon-logo.svg" type="icon-logo.svg" />
+
     <title>QuickList</title>
   </head>
   <body>
     <header>
-      <img src="/imgs/logo.svg" alt="Logo da pagina" />
+      <img src="/imgs/logo.svg" alt="Logo QuickList" class="logo" />
     </header>
 
     <main class="container">
@@ -29,16 +33,14 @@
 
       <section class="lista-container">
         <ul class="lista-compras">
-
           <li class="item">
             <div class="item-info">
               <input type="checkbox" id="item1" />
               <label for="item1">Pão de forma</label>
             </div>
             <button type="button" class="btn-delete">
-                <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
+              <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
             </button>
-            
           </li>
 
           <li class="item">
@@ -50,17 +52,22 @@
               <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
             </button>
           </li>
-
         </ul>
       </section>
     </main>
 
-    <aside class="alert" role="alert">
-      <img src="/imgs/assets/alert.svg" alt="Ícone de aviso" />
-      <p>O item foi removido da lista</p>
-      <button type="button" class="btn-close-alert">
-        <img src="/imgs/assets/sair.svg" alt="Fechar aviso" />
-      </button>
+    <aside class="container alert-container">
+      <div class="alert">
+        <img src="imgs/assets/alert.svg" alt="Aviso" class="alert-icon" />
+
+        <span>O item foi removido da lista</span>
+
+        <img
+          src="imgs/assets/delete-small.svg"
+          alt="Fechar"
+          class="close-alert-icon"
+        />
+      </div>
     </aside>
 
     <script src="script.js"></script>
