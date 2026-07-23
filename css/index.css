@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --background-primary: #F4F5FB;
     --background-secondary: #FFFFFF;
@@ -13,4 +19,12 @@
     --text-label: 600 1rem/1.25rem var(--font-family);   
     --text-paragraph: 400 1rem/1.5rem var(--font-family); 
     --text-link: 500 0.875rem/1rem var(--font-family);  
+}
+
+body {
+  font-family: var(--font-family, 'Inter', sans-serif);
+  background-color: var(--background-primary, #F4F5FB);
+  color: var(--content-primary, #080B12);
+  
+  -webkit-font-smoothing: antialiased;
 }
