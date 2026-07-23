@@ -1,29 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css">
-    <link rel="shortcut icon" href="/imgs/icon-logo.svg" type="icon-logo.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="shortcut icon" href="/imgs/icon-logo.svg" type="icon-logo.svg" />
     <title>QuickList</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <img src="/imgs/logo.svg" alt="Logo da pagina">
+      <img src="/imgs/logo.svg" alt="Logo da pagina" />
     </header>
 
     <main class="container">
-        <form action="">
-        </form>
+      <a href="#" class="btn-back">← Voltar</a>
+      <h1>Compras da semana</h1>
 
-        <section class="lista-container">
-        </section>
+      <form action="">
+        <input type="text" placeholder="Adicione um novo item" />
+        <button type="submit">Adicionar item</button>
+      </form>
+
+      <section class="lista-container">
+        <ul class="lista-compras">
+
+          <li class="item">
+            <div class="item-info">
+              <input type="checkbox" id="item1" />
+              <label for="item1">Pão de forma</label>
+            </div>
+            <button type="button" class="btn-delete">
+                <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
+            </button>
+            
+          </li>
+
+          <li class="item">
+            <div class="item-info">
+              <input type="checkbox" id="item-2" />
+              <label for="item-2">Café preto</label>
+            </div>
+            <button type="button" class="btn-delete">
+              <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
+            </button>
+          </li>
+
+        </ul>
+      </section>
     </main>
 
     <aside class="alert" role="alert">
+      <img src="/imgs/assets/alert.svg" alt="Ícone de aviso" />
+      <p>O item foi removido da lista</p>
+      <button type="button" class="btn-close-alert">
+        <img src="/imgs/assets/sair.svg" alt="Fechar aviso" />
+      </button>
     </aside>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
