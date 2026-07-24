@@ -7,12 +7,11 @@
 
 .btn-back {
   display: inline-block;
-  font-size: var(--font-link, 0.875rem);
+  font: var(--text-link);
   color: var(--color-brand);
   text-decoration: none;
-  font-weight: 500;
   margin-bottom: 0.5rem;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
 .btn-back:hover {
@@ -20,8 +19,7 @@
 }
 
 h1 {
-  font-size: var(--font-title, 1.5rem);
-  font-weight: 700;
-  color: var(--content-primary, #080B12);
+  font: var(--text-title);
+  color: var(--content-primary);
   margin-bottom: 1.5rem;
 }
