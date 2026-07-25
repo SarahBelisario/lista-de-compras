@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="shortcut icon" href="/imgs/icon-logo.svg" type="icon-logo.svg" />
 
@@ -25,57 +22,36 @@
     <main class="container">
       <a href="#" class="btn-back">← Voltar</a>
       <h1>Compras da semana</h1>
-
-      <form class="add-item-form">
+      
+      <form class="add-item-form" id="item-form">
         <input
+          id="add-item"
           type="text"
           class="item-input"
           placeholder="Adicione um novo item"
           required
         />
-        <button type="submit" class="add-btn">
+        <button id="registers" type="submit" class="add-btn">
           <span>Adicionar item</span>
         </button>
       </form>
 
       <section class="lista-container">
-        <ul class="lista-compras">
-          <li class="item">
-            <div class="item-info">
-              <input type="checkbox" id="item1" />
-              <label for="item1">Pão de forma</label>
-            </div>
-            <button type="button" class="btn-delete">
-              <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
-            </button>
-          </li>
-
-          <li class="item">
-            <div class="item-info">
-              <input type="checkbox" id="item-2" />
-              <label for="item-2">Café preto</label>
-            </div>
-            <button type="button" class="btn-delete">
-              <img src="/imgs/assets/lixeira.svg" alt="Icone de lixeira" />
-            </button>
-          </li>
-        </ul>
+        <ul class="lista-compras" id="list"></ul>
       </section>
+
+      <aside class="container alert-container hidden">
+        <div class="alert">
+          <img src="imgs/assets/alert.svg" alt="Aviso" class="alert-icon" />
+          <span>O item foi removido da lista</span>
+          <img
+            src="imgs/assets/delete-small.svg"
+            alt="Fechar"
+            class="close-alert-icon"
+          />
+        </div>
+      </aside>
     </main>
-
-    <aside class="container alert-container">
-      <div class="alert">
-        <img src="imgs/assets/alert.svg" alt="Aviso" class="alert-icon" />
-
-        <span>O item foi removido da lista</span>
-
-        <img
-          src="imgs/assets/delete-small.svg"
-          alt="Fechar"
-          class="close-alert-icon"
-        />
-      </div>
-    </aside>
 
     <script src="script.js"></script>
   </body>
